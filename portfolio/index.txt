@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    
+    <div class = "about-wrapper">
+      <div class = "about-left">
+        <div class = "about-left-content">
+          <div>
+            <div class = "shadow">
+              <div class = "about-img">
+                <img src = "about-img.jpg" alt = "about image">
+              </div>
+            </div>
+
+            <h2>Akshat<br>Baranwal</h2>
+            <h3>aspiring full stack developer</h3>
+          </div>
+
+          <ul class = "icons">
+            <li><a href="http://discordapp.com/users/971765086635036692"><i class = "fab fa-discord"></i></a></li>
+            <li><a href="https://www.instagram.com/i_am_akshat2004?igsh=ZHBhNW1iNzF0NGw3&utm_source=qr"><i class = "fab fa-instagram"></i></a></li>
+            <li><a href="www.linkedin.com/in/akshat-baranwal-921899286"><i class = "fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Akshat1931"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class = "about-right">
+        <h1>hi<span>!</span></h1>
+        <h2>Here's who I am & what I do</h2>
+        <div class = "about-btns">
+          <button type = "button" class = "btn btn-pink">resume</button>
+          <button type = "button" class = "btn btn-white">projects</button>
+        </div>
+
+        <div class="about-para">
+          <p>Welcome to my world of full-stack development!</p>
+          <p>I'm Akshat Baranwal, a passionate and creative aspiring full stack developer.</p>
+          <p>With a love for coding and a keen eye for design, I enjoy crafting beautiful and functional websites that leave a lasting impression.</p>
+          <p>Driven by curiosity and a desire to learn, I'm constantly exploring new technologies and techniques to enhance my skills.</p>
+          <p>Let's connect and create something amazing together!</p>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

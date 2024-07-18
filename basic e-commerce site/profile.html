@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - E-Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Additional inline styles for demonstration */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .top-nav {
+            background-color: #232F3E;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bottom-nav {
+            background-color: #131A22;
+            padding: 1px 20px;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-container input {
+            padding: 5px;
+            font-size: 1em;
+        }
+        .search-container button {
+            background-color: #FFA41C;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #E47911;
+        }
+        .icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-left: 10px;
+            position: relative;
+        }
+        .icons a:hover::before {
+            content: attr(title);
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            white-space: nowrap;
+            z-index: 1000;
+        }
+        .footer {
+            background-color: #232F3E;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+        .profile-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .profile {
+            text-align: center;
+            max-width: 600px; /* Adjust as needed */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f1f1f1;
+        }
+        .profile-image {
+            margin-bottom: 20px;
+        }
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .profile-details {
+            margin-bottom: 20px;
+        }
+        .profile-details p {
+            margin: 5px 0;
+        }
+        .profile-actions button {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="logo">E-Shop</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search products...">
+                <button type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="icons">
+                <a href="cart.html" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="profile.html" title="User"><i class="fas fa-user"></i></a>
+                <a href="customer-care.html" title="Customer Care" target="_blank"><i class="fas fa-headset"></i></a>
+            </div>
+        </div>
+        <nav class="bottom-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-page">
+        <section class="profile">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                </div>
+                <div class="profile-details">
+                    <p><strong>Name:</strong> username</p>
+                    <p><strong>Email:</strong> username.1234@gmail.com</p>
+                    <p><strong>Address:</strong> 123 Main St, City, Country</p>
+                    <p><strong>Phone:</strong> +1234567890</p>
+                    <p><strong>Member Since:</strong> January 2023</p>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button>Edit Profile</button>
+                <button>Change Password</button>
+                <button>Logout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="customer-support">
+            <h2>Customer Support</h2>
+            <button onclick="window.open('customer-care.html', '_blank')">Live Chat</button>
+        </section>
+        <p>© 2024 E-Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
