@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "proxy": "http://localhost:5000",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.3",
+    "rc-progress": "^3.3.2",
+    "react": "^18.0.0",
+    "react-big-calendar": "^0.40.1",
+    "react-circular-progressbar": "^2.0.4",
+    "react-datepicker": "^4.8.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dnd-multi-backend": "^6.0.2",
+    "react-dnd-preview": "^6.0.2",
+    "react-dnd-touch-backend": "^16.0.1",
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.0.24"
+  }
+}
